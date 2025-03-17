@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Madhumathi's Portfolio - Aspiring Full-Stack Developer and Python Enthusiast. Explore my projects, skills, and blog.">
+    <meta name="keywords" content="portfolio, full-stack developer, Python, Django, web development">
+    <meta name="author" content="Madhumathi">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/93133bfd7e.js" crossorigin="anonymous"></script>
@@ -11,16 +14,16 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="Screenshot 2025-01-11 112319.png" height="100px" width="150px" class="logo">
+                <img src="Screenshot 2025-01-11 112319.png" alt="Logo" height="100px" width="150px" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#blog">Blogs/Articles</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#projects" onclick="closemenu()">Projects</a></li>
+                    <li><a href="#blog" onclick="closemenu()">Blogs/Articles</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()" aria-label="Close Menu"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <i class="fa-solid fa-bars" onclick="openmenu()" aria-label="Open Menu"></i>
             </nav>
             <div class="header-text">
                 <p>ASPIRING FULL-STACK DEVELOPER | PYTHON & DJANGO ENTHUSIAST</p>
@@ -28,24 +31,25 @@
             </div>
         </div>
     </div>
+
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="IMG_20240315_135045.jpg" height="450px" width="340px">
+                    <img src="IMG_20240315_135045.jpg" alt="Madhumathi's Profile Picture" height="450px" width="340px" loading="lazy">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p> I am a highly motivated and enthusiastic B.TECH CSE student at Sri Indu College of Engineering and Technology, with a strong passion for full-stack development and software engineering. I have a keen interest in learning new technologies and continuously enhancing my programming skills. I am eager to apply my knowledge and skills in a professional environment while continuously growing as a developer. With strong problem-solving abilities and a dedication to continuous learning, I strive to build efficient and scalable solutions</p>
+                    <p>I am a highly motivated and enthusiastic B.TECH CSE student at Sri Indu College of Engineering and Technology, with a strong passion for full-stack development and software engineering. I have a keen interest in learning new technologies and continuously enhancing my programming skills. I am eager to apply my knowledge and skills in a professional environment while continuously growing as a developer. With strong problem-solving abilities and a dedication to continuous learning, I strive to build efficient and scalable solutions.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('education')"><span>Education</span></p>
                         <p class="tab-links" onclick="opentab('experience')"><span>Experience</span></p>
                     </div>
-                    <div class="tab-contents" id="education">
+                    <div class="tab-contents active-tab" id="education">
                         <ul>
-                            <li><span>2020</span><br>schooling at The Cauldron High School</li>
+                            <li><span>2020</span><br>Schooling at The Cauldron High School</li>
                             <li><span>2020-2022</span><br>Intermediate at Narayana Junior College</li>
-                            <li><span>2022-2026</span><br>BTECH at Sri Indu College Of Enginnering and Technology</li>
+                            <li><span>2022-2026</span><br>BTECH at Sri Indu College Of Engineering and Technology</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
@@ -64,17 +68,17 @@
             <h1 class="sub-title">My Skills</h1>
             <div class="tab-titles">
                 <p class="tab-links active-link" onclick="opentab('Programming')"><span>Programming Languages</span></p>
-                <p class="tab-links active-link" onclick="opentab('library')"><span>Python Libraries</span></p>
-                <p class="tab-links active-link" onclick="opentab('web')"><span>Web Technologies</span></p>
-                <p class="tab-links active-link" onclick="opentab('tools')"><span>Tools & Frameworks</span></p>
-                <p class="tab-links active-link" onclick="opentab('database')"><span>Database</span></p>
-                <p class="tab-links active-link" onclick="opentab('softskills')"><span>Soft Skills</span></p>
+                <p class="tab-links" onclick="opentab('library')"><span>Python Libraries</span></p>
+                <p class="tab-links" onclick="opentab('web')"><span>Web Technologies</span></p>
+                <p class="tab-links" onclick="opentab('tools')"><span>Tools & Frameworks</span></p>
+                <p class="tab-links" onclick="opentab('database')"><span>Database</span></p>
+                <p class="tab-links" onclick="opentab('softskills')"><span>Soft Skills</span></p>
             </div>
-            <div class="tab-contents" id="Programming">
+            <div class="tab-contents active-tab" id="Programming">
                 <ul>
-                    <li><i style="color:white;" class="fa-brands fa-python"></i>  Python</li>
-                    <li><i style="color:white;" class="fa-brands fa-js"></i>    JavaScript</li>
-                    <li><i style="color:white;" class="fa-solid fa-database"></i>  SQL</li>
+                    <li><i class="fa-brands fa-python"></i> Python</li>
+                    <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                    <li><i class="fa-solid fa-database"></i> SQL</li>
                 </ul>
             </div>
             <div class="tab-contents" id="library">
@@ -86,8 +90,8 @@
             </div>
             <div class="tab-contents" id="web">
                 <ul>
-                    <li><i style="color:white;" class="fa-brands fa-html5"></i>   HTML</li>
-                    <li><i style="color:white;" class="fa-brands fa-css3"></i>CSS</li>
+                    <li><i class="fa-brands fa-html5"></i> HTML</li>
+                    <li><i class="fa-brands fa-css3"></i> CSS</li>
                 </ul>
             </div>
             <div class="tab-contents" id="tools">
@@ -99,7 +103,7 @@
             </div>
             <div class="tab-contents" id="database">
                 <ul>
-                    <li><i style="color:white;" class="fa-solid fa-database"></i>  MySQL</li>
+                    <li><i class="fa-solid fa-database"></i> MySQL</li>
                 </ul>
             </div>
             <div class="tab-contents" id="softskills">
@@ -120,102 +124,66 @@
                 <div>
                     <i class="fa-solid fa-shop"></i>
                     <h2>Super Market Bill Generation</h2>
-                    <p>Supermarket bill generation calculating the total price with discounts, and generating a final bill. The customer pays, and a receipt is printed with all details.</p>               
+                    <p>Supermarket bill generation calculates the total price with discounts and generates a final bill. Built using Python, this project demonstrates my skills in handling user input, calculations, and output formatting.</p>
                     <a href="https://github.com/madhumathidhonuri/SuperMarket_billGeneration">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-cloud"></i>
                     <h2>Weather Forecast</h2>
-                    <p>The Weather Forecast project is a web application built using HTML, likely fetching weather data via APIs to display real-time and forecasted weather details for a user-specified location. It provides an intuitive interface for viewing temperature, humidity, wind speed, and other weather parameters.</p>
+                    <p>The Weather Forecast project is a web application built using HTML, likely fetching weather data via APIs to display real-time and forecasted weather details for a user-specified location.</p>
                     <a href="https://github.com/madhumathidhonuri/Weather_Forecast/blob/main/weather_forecast.html">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-microphone"></i>
                     <h2>Voice Assistant</h2>
-                    <p>The Voice Assistance project is a software application designed to perform tasks and answer queries using voice commands. It likely leverages speech recognition and text-to-speech technologies to interact with users and provide responses or execute commands.</p>
+                    <p>The Voice Assistance project is a software application designed to perform tasks and answer queries using voice commands. It leverages speech recognition and text-to-speech technologies.</p>
                     <a href="https://github.com/madhumathidhonuri/Voice_Assistance/blob/main/voice_assistant.py">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-calculator"></i>
                     <h2>BMI Calculator</h2>
-                    <p>A BMI (Body Mass Index) calculator computes a person's body fat based on their weight and height using the formula: BMI = weight (kg) / height² (m²). It categorizes the result into ranges like underweight, normal, overweight, or obese to assess health risks.</p>
+                    <p>A BMI (Body Mass Index) calculator computes a person's body fat based on their weight and height using the formula: BMI = weight (kg) / height² (m²).</p>
                     <a href="https://github.com/madhumathidhonuri/BMI_Calculator">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-lock"></i>
                     <h2>Random Password Generator</h2>
-                    <p>A random password generator creates secure and unpredictable passwords by combining characters like letters, numbers, and symbols. It helps enhance security by producing strong passwords resistant to guessing or hacking.</p>
+                    <p>A random password generator creates secure and unpredictable passwords by combining characters like letters, numbers, and symbols.</p>
                     <a href="https://github.com/madhumathidhonuri/Random_Password_Generator">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-regular fa-pen-to-square"></i>
                     <h2>TO-DO List App</h2>
-                    <p>A to-do list app helps users organize and manage tasks by allowing them to add, update, and mark tasks as complete. It improves productivity by prioritizing activities and keeping track of pending work.</p>
+                    <p>A to-do list app helps users organize and manage tasks by allowing them to add, update, and mark tasks as complete.</p>
                     <a href="https://github.com/madhumathidhonuri/To-Do">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-gamepad"></i>
-                    <h2>Number Guessing Game</h2>
-                    <p>A number guessing game challenges players to guess a randomly chosen number within a specific range.</p>
-                    <a href="https://github.com/madhumathidhonuri/Gwing-internship/blob/main/number_guessing_game.py">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-hand-scissors"></i>
-                    <h2>Rock Paper Scissors</h2>
-                    <p>Rock, Paper, Scissors is a hand game where two players choose one of three options: rock, paper, or scissors. Rock beats scissors, scissors beats paper, and paper beats rock, with the goal being to choose the winning option.</p>
-                    <a href="https://github.com/madhumathidhonuri/Gwing-internship/blob/main/rock_paper_scissors.py">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-calculator"></i>
-                    <h2>Calculator</h2>
-                    <p>A calculator is a tool or application used to perform mathematical operations such as addition, subtraction, multiplication, and division.</p>
-                    <a href="https://github.com/madhumathidhonuri/CODTECH_internship/blob/main/calci.py">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    <h2>Adventurous Game</h2>
-                    <p>The code is a text-based adventure game where the player makes choices that impact the outcome, such as helping a man or reporting a thief. The game ends with a win or loss based on the player's decisions, with colorful text for feedback.</p>
-                    <a href="https://github.com/madhumathidhonuri/Gwing-internship/blob/main/adventurous.py">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-quote-left"></i>
-                    <h2>Blog App</h2>
-                    <p>I recently developed a full-stack web application using Django, allowing users to create, manage, and share their blogs seamlessly.</p>
-                    <a href="https://github.com/madhumathidhonuri/BlogWriter">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-dumpster"></i>
-                    <h2>Ecommerce</h2>
-                    <p>The Ecommerce Website is a dynamic online shopping platform built with Django, offering seamless product browsing, cart management, and secure checkout. It provides a user-friendly experience for both customers and administrators to manage products and orders efficiently.</p>
-                    <a href="https://github.com/madhumathidhonuri/Ecommerce">Learn more</a>
                 </div>
             </div>
         </div>
     </div>
+
     <div id="blog">
         <div class="container">
             <h1 class="sub-title">My Blogs/Articles</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="Screenshot 2025-01-15 214736.png">
+                    <img src="Screenshot 2025-01-15 214736.png" alt="Blog 1" loading="lazy">
                     <div class="layer">
-                    <h3>Giving is 100 times greater than taking</h3>
-                    <a href="https://medium.com/@madhumathidonuru/giving-is-100-times-greater-than-taking-1f58a6e1d7a9"><i class="fa-solid fa-link"></i></a>
+                        <h3>Giving is 100 times greater than taking</h3>
+                        <a href="https://medium.com/@madhumathidonuru/giving-is-100-times-greater-than-taking-1f58a6e1d7a9"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="Screenshot 2025-01-15 214714.png">
+                    <img src="Screenshot 2025-01-15 214714.png" alt="Blog 2" loading="lazy">
                     <div class="layer">
-                    <h3>The Power of a mentor</h3>
-                    <a href="https://medium.com/@madhumathidonuru/the-power-of-a-mentor-cd80d78f57e1"><i class="fa-solid fa-link"></i></a>
+                        <h3>The Power of a Mentor</h3>
+                        <a href="https://medium.com/@madhumathidonuru/the-power-of-a-mentor-cd80d78f57e1"><i class="fa-solid fa-link"></i></a>
                     </div>
-                </div>
-                
                 </div>
             </div>
             <a href="#" class="btn">See more</a>
         </div>
     </div>
+
     <div id="contact">
         <div class="container">
             <div class="row">
@@ -224,18 +192,18 @@
                     <p><i class="fa-regular fa-paper-plane"></i>madhumathidonuru@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>1234567890</p>
                     <div class="social-icons">
-                        <a href="https://www.instagram.com/__reddy.madhu/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/madhumathi-dhonuri-46b3692b9/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/madhumathidhonuri"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://medium.com/@madhumathidonuru"><i class="fa fa-medium" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/__reddy.madhu/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/madhumathi-dhonuri-46b3692b9/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/madhumathidhonuri" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://medium.com/@madhumathidonuru" aria-label="Medium"><i class="fa fa-medium" aria-hidden="true"></i></a>
                     </div>
-                    <a href="madhu_resume.pdf" download class="btn btn2">Download resume</a>
+                    <a href="madhu_resume.pdf" download class="btn btn2">Download Resume</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="your name" required>
-                        <input type="email" name="Email" placeholder="your email" required>
-                        <textarea rows="6" name="Message" placeholder="your message"></textarea>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea rows="6" name="Message" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Send Message</button>
                     </form>
                     <span id="msg"></span>
@@ -243,46 +211,46 @@
             </div>
         </div>
     </div>
+
     <script>
-        var tablinks=document.getElementsByClassName('tab-links');
-        var tabcontents=document.getElementsByClassName('tab-contents');
-        function opentab(tabname){
-            for(tablink of tablinks){
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
                 tablink.classList.remove('active-link');
             }
-            for(tabcontent of tabcontents){
+            for (let tabcontent of tabcontents) {
                 tabcontent.classList.remove('active-tab');
             }
             event.currentTarget.classList.add('active-link');
             document.getElementById(tabname).classList.add('active-tab');
         }
-    </script>
-    <script>
-        var menu=document.getElementById('sidemenu');
-        function openmenu(){
-            menu.style.right='0';
+
+        var menu = document.getElementById('sidemenu');
+        function openmenu() {
+            menu.style.right = '0';
         }
-        function closemenu(){
-            menu.style.right='-200px';
+        function closemenu() {
+            menu.style.right = '-200px';
         }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwcfdtNmJz10uAL6axeDwkoOO2_Oe2WEAlBB5V4cMPgHqy6MnEt_GWxNLWxxU6goJkK/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg=document.getElementById('msg')
-      
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwcfdtNmJz10uAL6axeDwkoOO2_Oe2WEAlBB5V4cMPgHqy6MnEt_GWxNLWxxU6goJkK/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById('msg');
+
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML='Message sent successfully'
-                setTimeout(function(){
-                    mag.innerHTML=''
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = 'Message sent successfully';
+                    setTimeout(function () {
+                        msg.innerHTML = '';
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
 </body>
 </html>
