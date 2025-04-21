@@ -87,7 +87,7 @@ nav ul li a:hover::after {
 
 #about p {
     padding: 10px;
-    color: cyan;
+    color:peru;
     font-size: 20px;
 }
 
@@ -172,8 +172,67 @@ nav ul li a:hover::after {
 
 #Skills {
     margin: 80px 0;
+    background: #232157;
 }
 
+.skills-presentation {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skills-column {
+    text-align: center;
+}
+
+.skills-column h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.skills-column h3::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: plum;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skills-column ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+.skills-column ul li {
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.skills-column ul li:hover {
+    background: plum;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
 #projects {
     padding: 30px 0;
 }
@@ -214,7 +273,7 @@ nav ul li a:hover::after {
 }
 
 .projects-list div:hover {
-    background: #ff004f;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), plum);
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -427,12 +486,17 @@ nav .fa-solid {
         font-size: 40px;
     }
 
-    .about-col-1,
-    .about-col-2 {
-        flex-basis: 100%;
+    .about-col-1{
+        flex-basis:100%;
+        max-width: 280px;
+    }
+    .about-col-1 img {
+        width: 100%;
+        height: auto;
     }
 
     .about-col-2 {
+        flex-basis: 100%;
         font-size: 14px;
     }
 
